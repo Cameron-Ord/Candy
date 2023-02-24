@@ -90,6 +90,7 @@ body {
   place-items: center;
 }
 #hero_section2 > span {
+  grid-template-rows: 1fr;
   height: auto;
   min-height: 75vh;
   max-height: 85vh;
@@ -98,14 +99,44 @@ body {
   text-align: center;
 }
 #hero_section2 > span > img {
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
   width: auto;
   max-width: 75%;
   max-height: 75%;
 }
 
 @media only screen and (min-width: 1020px) {
+  #hero_section2 {
+    margin-top: 25px;
+    background-color: orange;
+    display: grid;
+    place-items: center;
+  }
+  #hero_section2 > span {
+    grid-template-rows: 1fr;
+    height: auto;
+    min-height: 70vh;
+    max-height: 80vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
   #hero_section2 > span > img {
-    width: 40%;
+    border-radius: 30px;
+    justify-self: center;
+    width: auto;
+    max-width: 60%;
+    max-height: 60%;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
   }
   .specific_text_width {
     width: 76%;
