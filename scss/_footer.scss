@@ -3,5 +3,20 @@ min-height: 15vh;
 display: grid;
 background-color: black;
 width: 100%;
-
+>p{
+    display: grid;
+    text-align: center;
+place-items: center;
+    color: white;
 }
+}
+
+
+@media only screen and (min-width: 1020px){
+
+.Specific_Text_Width{
+
+    width: 66%;
+}
+}
+

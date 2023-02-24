@@ -1,9 +1,12 @@
 #page_header{
+    width: 100%;
+    background-color: whitesmoke;
 place-items: center;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 >h1{
-
+    margin-left: 10px;
+display: grid;
 justify-self: start;
 font-size: 1.7em;
 
@@ -12,9 +15,22 @@ font-size: 1.7em;
 }
 
 
-#hero_section{
-display: grid;
-place-items: center;
+@media only screen and (min-width: 1020px){
 
-
+    #page_header{
+        width: 100%;
+        background-color: whitesmoke;
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    >h1{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 30vw 30vw;
+    font-size: 1.7em;
+    
+    }
+    
+    }
 }
+
